@@ -32,6 +32,7 @@ angular
         console.log($scope.game.turn)
         $scope.game.turn *= -1;
         console.log($scope.game.turn)
+        $scope.getSymbol(square);
         $scope.game.winner = getWinner();
     }
 
