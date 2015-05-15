@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ticTacToeApp">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.1/angularfire.min.js"></script>
+
+    <script type = "text/javascript" src="js/main.js"></script>
+    <script type = "text/javascript" src="js/TICTACTOEController.js"></script>
+    
+    <title>My TIC-TAC-TOE</title>
+
+
+
+</head>
+<body ng-controller="TicTacToeController as tictactoe">
+	
+
+
+	
+<div id="gameboard">
+	<table>
+	<h1>This is tic tac toe</h1>
+		<tr>
+			<td class="box" ng-click="getMove(0)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(1)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(2)"> {{getSymbol}}</td>
+		</tr>
+
+		<tr>
+			<td class="box" ng-click="getMove(3)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(4)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(5)"> {{getSymbol}}</td>
+		</tr>
+		
+		<tr>
+			<td class="box" ng-click="getMove(6)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(7)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(8)"> {{getSymbol}}</td>
+		</tr>
+
+		</tr>
+		</div>
+</table>
+</div>
+	</table>	
+<div class="players">
+	<id=player1>PLAYER 1
+	<input type=text>
+	</id=player1>
+		<br>
+		<br>
+		<br>
+		<br>
+	<id=player2>PLAYER 2
+	<input type=text>
+	</id=player2>
+	</div>
+
+<div class="smack">
+	TALK SMACK!!!</div>
+	<input type=text id="text">
+</div>
+<br>
+<div class="button game-new">Start New Game</div>
+  <div class="button game-reset">Clear Scores</div>
+	
+
+</body>
+</html>

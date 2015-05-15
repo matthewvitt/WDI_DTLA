@@ -1,0 +1,46 @@
+body{
+	border-radius: 25px;
+	width: 100%;
+	text-align: center;
+}
+#gameboard{
+	border: 2px solid #343727;
+	border-radius: 5px;
+	margin: 0 auto;
+	background-color: #37B4FF;
+	width: 500px;
+	height:500px;
+	text-align: center;
+	position:relative;
+	left:20px;
+}
+
+.box{
+	border:10px solid black;
+	width:144px;
+	height:90px;
+	margin:0 auto;
+	background-color: #FFB314;
+	padding: 10px;
+	
+	position:relative;
+	left:0px;
+
+}
+
+.players{
+	width:400px;
+	border:4px red;
+	float:left;
+	position:relative;
+	top:-450px;
+}
+
+.smack{
+	border:3px solid black;
+	width:300px;
+	height:300px;
+	float:right;
+	position:relative;
+	top:-450px;
+	}
