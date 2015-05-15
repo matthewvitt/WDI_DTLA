@@ -12,7 +12,7 @@
 
     <script type = "text/javascript" src="js/main.js"></script>
     <script type = "text/javascript" src="js/TICTACTOEController.js"></script>
-    
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <title>My TIC-TAC-TOE</title>
 
 
@@ -27,21 +27,21 @@
 	<table>
 	<h1>This is tic tac toe</h1>
 		<tr>
-			<td class="box" ng-click="getMove(0)"> {{symbols[0]}}</td>
-			<td class="box" ng-click="getMove(1)"> {{symbols[1]}}</td>
-			<td class="box" ng-click="getMove(2)"> {{symbols[2]}}</td>
+			<td class="box" ng-click="getMove(0)"> {{getSymbol(0)}}</td>
+			<td class="box" ng-click="getMove(1)"> {{getSymbol(1)}}</td>
+			<td class="box" ng-click="getMove(2)"> {{getSymbol(2)}}</td>
 		</tr>
 			
 		<tr>
-			<td class="box" ng-click="getMove(3)"> {{symbols[3]}}</td>
-			<td class="box" ng-click="getMove(4)"> {{symbols[4]}}</td>
-			<td class="box" ng-click="getMove(5)"> {{symbols[5]}}</td>
+			<td class="box" ng-click="getMove(3)"> {{getSymbol(3)}}</td>
+			<td class="box" ng-click="getMove(4)"> {{getSymbol(4)}}</td>
+			<td class="box" ng-click="getMove(5)"> {{getSymbol(5)}}</td>
 		</tr>
 		
 		<tr>
-			<td class="box" ng-click="getMove(6)"> {{symbols[6]}}</td>
-			<td class="box" ng-click="getMove(7)"> {{symbols[7]}}</td>
-			<td class="box" ng-click="getMove(8)"> {{symbols[8]}}</td>
+			<td class="box" ng-click="getMove(6)"> {{getSymbol(6)}}</td>
+			<td class="box" ng-click="getMove(7)"> {{getSymbol(7)}}</td>
+			<td class="box" ng-click="getMove(8)"> {{getSymbol(8)}}</td>
 		</tr>
 
 		</tr>
