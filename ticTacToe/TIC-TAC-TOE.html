@@ -18,7 +18,7 @@
 
 
 </head>
-<body ng-controller="TicTacToeController as tictactoe">
+<body ng-controller="TicTacToeController">
 	
 
 
@@ -27,21 +27,21 @@
 	<table>
 	<h1>This is tic tac toe</h1>
 		<tr>
-			<td class="box" ng-click="getMove(0)"> {{getSymbol}}</td>
-			<td class="box" ng-click="getMove(1)"> {{getSymbol}}</td>
-			<td class="box" ng-click="getMove(2)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(0)"> {{symbols[0]}}</td>
+			<td class="box" ng-click="getMove(1)"> {{symbols[1]}}</td>
+			<td class="box" ng-click="getMove(2)"> {{symbols[2]}}</td>
 		</tr>
-
+			
 		<tr>
-			<td class="box" ng-click="getMove(3)"> {{getSymbol}}</td>
-			<td class="box" ng-click="getMove(4)"> {{getSymbol}}</td>
-			<td class="box" ng-click="getMove(5)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(3)"> {{symbols[3]}}</td>
+			<td class="box" ng-click="getMove(4)"> {{symbols[4]}}</td>
+			<td class="box" ng-click="getMove(5)"> {{symbols[5]}}</td>
 		</tr>
 		
 		<tr>
-			<td class="box" ng-click="getMove(6)"> {{getSymbol}}</td>
-			<td class="box" ng-click="getMove(7)"> {{getSymbol}}</td>
-			<td class="box" ng-click="getMove(8)"> {{getSymbol}}</td>
+			<td class="box" ng-click="getMove(6)"> {{symbols[6]}}</td>
+			<td class="box" ng-click="getMove(7)"> {{symbols[7]}}</td>
+			<td class="box" ng-click="getMove(8)"> {{symbols[8]}}</td>
 		</tr>
 
 		</tr>
