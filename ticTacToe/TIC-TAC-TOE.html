@@ -50,16 +50,16 @@
 </div>
 	</table>	
 <div class="players">
-	<id=player1>PLAYER 1
-	<input type=text>
-	</id=player1>
+	PLAYER 1 WINS
+	{{winCount}}
 		<br>
 		<br>
 		<br>
 		<br>
-	<id=player2>PLAYER 2
-	<input type=text>
-	</id=player2>
+	
+	PLAYER 2 WINS
+	{{winCount}}
+	
 	</div>
 
 <div class="smack">
@@ -67,8 +67,9 @@
 	<input type=text id="text">
 </div>
 <br>
-<div class="button game-new">Start New Game</div>
-  <div class="button game-reset">Clear Scores</div>
+<div class="button-game-new" ng-click= "newGame()">Start New Game</div>
+
+<div class="button-game-refresh" ng-click = "refresh()">Clear Scores</div>
 	
 
 </body>

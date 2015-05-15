@@ -9,7 +9,9 @@ angular
 		var rootRef = new Firebase("https://tictactoeii.firebaseio.com/");
 		$scope.game = $firebaseObject(rootRef);
 		$scope.game.$bindTo($scope,"game").then(function(){       
-				$scope.game.turn= 1;		
+		$scope.game.turn = 1;
+		$scope.game.winCount = 0;	
+		$scope.game.board = [];	
 		});
 		$scope.symbols = ["X", "O"];
 		
@@ -20,7 +22,7 @@ angular
 			if (sqVal===0){
 				return "";
 			}else if (sqVal === 1){
-				return $scope.symbols[0] ;
+				return $scope.symbols[0];
 			}
 			else if (sqVal === -1){
 				return $scope.symbols[1]; 	
@@ -63,21 +65,29 @@ angular
        return 0;
     }
 
-    
+	
     function checkWinner(sum) {
 	    if(sum === 3){
-	    	$scope.refresh();
+	    	$scope.game.winCount++;
 	        return 1
+	        alert("X WINS")
 	    } else if(sum === -3){
-	        $scope.refresh();
+	    	$scope.game.winCount++;
 	        return -1
+	    	alert("O WINS");
 	    }
     } 
 
+    $scope.newGame = function () {
+    	$scope.game.board = [0,0,0,0,0,0,0,0,0];
+	    //$scope.game.winCount = 0;
+	    $scope.game.turn = 1;
+    }
+// clear scores needs to clear winCount
+
 	$scope.refresh = function () {
 	    $scope.game.board = [0,0,0,0,0,0,0,0,0];
-	    $scope.game.symbols = ["test"];
-	    $scope.game.winner = 0;
+	    $scope.game.winCount = 0;
 	    $scope.game.turn = 1;
 	    
 	}

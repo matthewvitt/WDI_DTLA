@@ -39,6 +39,22 @@ body{
 	top:-450px;
 }
 
+
+.button-game-refresh{
+	border:2px solid red;
+	width: 150px;
+	margin: auto;
+	background: 
+	cursor: pointer;
+}
+
+.button-game-new{
+	border:2px solid red;
+	width: 150px;
+	margin: auto;
+	background: 
+}
+
 .smack{
 	border:3px solid black;
 	width:300px;
