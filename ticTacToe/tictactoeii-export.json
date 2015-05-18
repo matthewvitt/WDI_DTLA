@@ -3,5 +3,6 @@
   "player1" : 1,
   "player2" : -1,
   "turn" : 1,
-  "winner" : 0
+  "winner" : 0,
+  "winCount" : 0
 }
