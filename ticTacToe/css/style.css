@@ -25,10 +25,10 @@ body{
 	background-color: #FFB314;
 	padding: 10px;
 	font-family: 'Dancing Script', cursive;
-	font: 60px;
+	font-size: 150%;
 	position:relative;
 	left:0px;
-
+	box-shadow: 10px,10px,black;
 }
 
 .players{
@@ -44,7 +44,7 @@ body{
 	border:2px solid red;
 	width: 150px;
 	margin: auto;
-	background: 
+	box-shadow:10px, 10px, black;
 	cursor: pointer;
 }
 
@@ -52,7 +52,7 @@ body{
 	border:2px solid red;
 	width: 150px;
 	margin: auto;
-	background: 
+	box-shadow:10px, 10px, black; 
 }
 
 .smack{
