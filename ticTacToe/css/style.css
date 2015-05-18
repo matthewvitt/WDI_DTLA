@@ -52,7 +52,8 @@ body{
 	border:2px solid red;
 	width: 150px;
 	margin: auto;
-	box-shadow:10px, 10px, black; 
+	box-shadow:10px, 10px, black;
+	cursor: pointer; 
 }
 
 .smack{
